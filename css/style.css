@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    flex-basis: 33.33%;
+    padding: 30px;
+}
+
+.product h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.product img {
+    height: 188px;
+    width: 300px;
+    border: 2px solid #DAE4B4;
+}
+
+.product p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 2;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.product p del {
+    color: black;
+    font-size: 12px;
+}
+
+.product p a {
+    text-decoration: none;
+    color: blue;
+}
+
+.product button {
+    color: #5a5a5a;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 15px 30px;
+    border: 0;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(255, 217, 0));
+    cursor: pointer;
+
+}
+
+.product button:hover {
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgb(255, 217, 0));
+}
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+}
